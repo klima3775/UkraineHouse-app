@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import "./dropdown.scss";
 
-function Dropdown() {
+function Dropdown({ options, defaultText }) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
-
-  const options = ["Option 1", "Option 2", "Option 3"];
 
   const toggleDropdown = () => {
     console.log("toggleDropdown called"); // добавлено
@@ -21,7 +19,8 @@ function Dropdown() {
   return (
     <div className="dropdown">
       <button onClick={toggleDropdown} className="dropdown-toggle">
-        {selectedOption ? selectedOption : "Select an option"}
+        {selectedOption ? selectedOption : defaultText}
+        {isOpen ? " ▲" : " ▼"}
       </button>
       {isOpen && (
         <div className={`dropdown-menu ${isOpen ? "active" : ""}`}>

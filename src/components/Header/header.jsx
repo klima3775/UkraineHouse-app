@@ -2,6 +2,8 @@ import "./header.scss";
 import Dropdown from "../Dropdown/dropdown";
 
 const Header = () => {
+  const cityOptions = ["Kyiv", "Lviv", "Odesa", "Dnipro", "Kharkiv"];
+  const languageOptions = ["Ukrainian", "English"];
   return (
     <div className="header">
       <div className="header-top">
@@ -19,12 +21,15 @@ const Header = () => {
           </div>
           <div className="header-top__right">
             <div className="city-dropdawn">
-              <Dropdown />
+              <Dropdown options={cityOptions} defaultText="Select a city" />
             </div>
             <div className="log in">Вхід регістрація</div>
             <div className="social">посилання на соціухи</div>
             <div className="language-dropdawn">
-              <Dropdown />
+              <Dropdown
+                options={languageOptions}
+                defaultText="Select a language"
+              />
             </div>
           </div>
         </div>
