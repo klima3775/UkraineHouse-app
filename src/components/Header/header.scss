@@ -1,0 +1,29 @@
+@import "../../uikit/styles.scss";
+.header {
+  width: 100%;
+  .header-top {
+    background-color: $top-header;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+
+      .header-top__left {
+        cursor: pointer;
+        ul {
+          display: flex;
+          list-style: none;
+          gap: 20px;
+        }
+      }
+
+      .header-top__right {
+        margin-right: 50px;
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        gap: 20px;
+      }
+    }
+  }
+}
