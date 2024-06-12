@@ -1,5 +1,6 @@
 @import "../../uikit/styles.scss";
 .header {
+  color: black;
   width: 100%;
   .header-top {
     background-color: $top-header;
@@ -18,11 +19,73 @@
       }
 
       .header-top__right {
-        margin-right: 50px;
         align-items: center;
         cursor: pointer;
         display: flex;
         gap: 20px;
+      }
+    }
+  }
+  .header-middle {
+    .container {
+      margin: 20px 50px 0px 50px;
+      display: flex;
+      justify-content: space-between;
+
+      .header-middle-left {
+        display: flex;
+        flex-direction: column;
+      }
+      .header-middle-right {
+        .buy-card {
+          position: sticky;
+          .btn_wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+              background-color: #3498db; // Background color for the button
+              color: #fff; // Text color for the button
+              border: none; // Remove default border
+              border-radius: 5px; // Rounded corners
+              padding: 10px 20px; // Padding for the button
+              font-size: 16px; // Font size for the button text
+              display: flex; // Use flexbox for layout
+              align-items: center; // Center items vertically
+              cursor: pointer; // Change cursor to pointer on hover
+              transition: background-color 0.3s ease; // Smooth transition for background color
+
+              &:hover {
+                background-color: #2980b9; // Darker blue on hover
+              }
+
+              .name-btn {
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+
+                .count {
+                  background-color: #e74c3c;
+                  color: #fff;
+                  border-radius: 50%;
+                  padding: 0 7px;
+                  margin-left: 5px;
+                  font-size: 14px;
+                }
+
+                .valute {
+                  margin-left: 5px;
+                  font-size: 14px;
+                }
+              }
+
+              .icon {
+                font-size: 18px;
+              }
+            }
+          }
+        }
       }
     }
   }

@@ -36,19 +36,30 @@ const Header = () => {
       </div>
       <div className="header-middle">
         <div className="container">
-          <div className="worktime">тут графік роботу</div>
-          <div className="phone">Номер телефону</div>
-          <div className="logo">logo</div>
-          <div className="buy-card">
-            <div className="btn_wrapper">
-              <button className="">
-                <span className="name-btn">
-                  Korzina
-                  <span className="count">0</span>
-                  <span className="valute">грн</span>
-                </span>
-                <span className="icon">иконка</span>
-              </button>
+          <div className="header-middle-left">
+            <div className="worktime">
+              <p>
+                Працюємо для вас <br></br>
+                Пн-Нд 9:00-21:00
+              </p>
+            </div>
+            <div className="phone">
+              <p>+380 62 222 22 22</p>
+            </div>
+          </div>
+          {/* <div className="logo">logo</div> */}
+          <div className="header-middle-right">
+            <div className="buy-card">
+              <div className="btn_wrapper">
+                <button className="">
+                  <span className="name-btn">
+                    Korzina
+                    <span className="count">0</span>
+                    <span className="valute">грн</span>
+                  </span>
+                  <span className="icon">иконка</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
