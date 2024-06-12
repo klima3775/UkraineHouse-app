@@ -1,4 +1,5 @@
 import "./header.scss";
+import Dropdown from "../Dropdown/dropdown";
 
 const Header = () => {
   return (
@@ -17,10 +18,14 @@ const Header = () => {
             </ul>
           </div>
           <div className="header-top__right">
-            <div className="city-dropdawn">дропдаун міста</div>
+            <div className="city-dropdawn">
+              <Dropdown />
+            </div>
             <div className="log in">Вхід регістрація</div>
             <div className="social">посилання на соціухи</div>
-            <div className="language-dropdawn">Дропдаун мови</div>
+            <div className="language-dropdawn">
+              <Dropdown />
+            </div>
           </div>
         </div>
       </div>
