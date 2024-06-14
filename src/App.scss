@@ -1,18 +1,5 @@
 // @import "./uikit/styles.scss";
 
-// * {
-//   list-style: none;
-//   text-decoration: none;
-//   box-sizing: border-box;
-// }
-
-// .App {
-//   background-color: $app-bg;
-//   background-size: cover;
-//   background-position: center;
-//   min-height: 100vh;
-//   background-attachment: fixed;
-// }
 @import "./uikit/styles.scss";
 
 * {
@@ -29,7 +16,7 @@ body {
 }
 
 .App {
-  background-color: $app-bg;
+  // background-color: $app-bg;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

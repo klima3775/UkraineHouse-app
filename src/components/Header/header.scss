@@ -8,9 +8,14 @@
     .container {
       display: flex;
       justify-content: space-between;
+      width: 1200px;
+      margin: 0 auto;
+      padding: 5px;
+      position: relative;
 
       .header-top__left {
         cursor: pointer;
+
         ul {
           display: flex;
           list-style: none;
@@ -31,6 +36,9 @@
       margin: 20px 50px 0px 50px;
       display: flex;
       justify-content: space-between;
+      box-sizing: border-box;
+      width: 1200px;
+      margin: 0 auto;
 
       .header-middle-left {
         display: flex;
@@ -38,7 +46,9 @@
       }
       .header-middle-right {
         .buy-card {
-          position: sticky;
+          margin-top: 30px;
+          margin-right: 80px;
+
           .btn_wrapper {
             display: flex;
             justify-content: center;
@@ -87,6 +97,14 @@
           }
         }
       }
+    }
+  }
+  .header-bottom {
+    .container {
+      box-sizing: border-box;
+      width: 1200px;
+      margin: 0 auto;
+      background-color: #3498db;
     }
   }
 }

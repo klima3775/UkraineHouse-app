@@ -1,5 +1,6 @@
 import "./header.scss";
 import Dropdown from "../Dropdown/dropdown";
+import IconBlock from "../IconBlock/iconBlock";
 
 const Header = () => {
   const cityOptions = ["Kyiv", "Lviv", "Odesa", "Dnipro", "Kharkiv"];
@@ -66,16 +67,7 @@ const Header = () => {
       </div>
       <div className="header-bottom">
         <div className="container">
-          <div className="menu">
-            <ul>
-              <li>Десерти</li>
-              <li>Вареники</li>
-              <li>Пельмені</li>
-              <li>від шефа</li>
-              <li>напої</li>
-              <li>соуси</li>
-            </ul>
-          </div>
+          <IconBlock />
         </div>
       </div>
     </div>
