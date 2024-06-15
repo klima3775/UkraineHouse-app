@@ -6,12 +6,12 @@ function Dropdown({ options, defaultText }) {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const toggleDropdown = () => {
-    console.log("toggleDropdown called"); // добавлено
+    console.log("toggleDropdown called");
     setIsOpen(!isOpen);
   };
 
   const handleOptionSelect = (option) => {
-    console.log("handleOptionSelect called with option:", option); // добавлено
+    console.log("handleOptionSelect called with option:", option);
     setSelectedOption(option);
     setIsOpen(false);
   };

@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header-top">
-        <div className="container">
+        <div className="containerss">
           <div className="header-top__left">
             <ul>
               <li>Головна</li>
